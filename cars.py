@@ -1,0 +1,17 @@
+cars = set()
+cars.add("tacoma")
+cars.add("wrangler")
+cars.add("4runner")
+cars.add("123")
+print(cars)
+cars.add("4runner")
+print(cars)
+cars.update(("ford","legend"))
+cars.discard("ford")
+print(cars)
+
+junkyard = ("car", "another_car", "a_third_car", "tacoma")
+
+cars=cars.union(junkyard)
+cars.discard("car")
+print(cars) 
