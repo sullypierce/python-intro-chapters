@@ -36,3 +36,23 @@ idioms = {
 for idiom in idioms:
     idiom_string = " ".join(idioms[idiom])
     print(f"{idiom} : {idiom_string}")
+
+
+
+#CHALLENGES
+
+my_family = {
+    "sister": {
+        "name": "Krista",
+        "age": 42
+    },
+    "mother": {
+        "name": "Cathie",
+        "age": 70
+    }
+}
+fam_tuples = my_family.items()
+print(fam_tuples) 
+fam_strings = [f"{obj['name']} is my {relationship} and is {obj['age']} years old" for relationship, obj in my_family.items()]
+
+print(fam_strings) 
